@@ -40,7 +40,6 @@ export class Control extends Sprite {
     this.origY = o.y;
     if (!this.center) {
       this.tX = this.x + 4;
-      console.log('CENTER');
     }
   }
 

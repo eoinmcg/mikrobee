@@ -97,7 +97,7 @@ export default class Play {
   }
 
   killBaddie(o) {
-    if (Math.random() > 0.5) {
+    if (Math.random() > 0.9) {
       this.g.spawn('Powerup', {p: this, x: o.x, y: o.y});
     }
     this.score += o.val;
@@ -120,8 +120,6 @@ export default class Play {
     level.bg.forEach((l) => {
       let ent = l.k;
       l.p = this;
-      // delete l.k;
-      console.log(ent, l);
       this.g.spawn(ent, l);
     });
 
@@ -211,7 +209,6 @@ export default class Play {
     this.levelComplete = true;
     this.g.events = [];
     let cb = () => {
-      console.log('DONE', this.wiper);
     this.levelNum += 1;
     this.levelData = Levels.levels[this.levelNum];
     if (!this.levelData) {

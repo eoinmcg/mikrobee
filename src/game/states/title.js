@@ -41,7 +41,7 @@ export default class Title {
           this.g.mainMusic.currentTime = 0;
         }
         this.g.H.toggleFullScreen(this.g.canvas.c);
-        this.g.changeState('Play');
+        this.g.changeState('Tutorial');
       }
     });
     this.g.addEvent({
@@ -63,9 +63,9 @@ export default class Title {
 
     for (let e of this.g.ents) e.update(dt);
 
-    if (this.canStart && (i.x || i['Space'] || i['Enter'])) {
-      this.g.changeState('Play');
-    }
+    // if (this.canStart && (i.x || i['Space'] || i['Enter'])) {
+    //   this.g.changeState('Tutorial');
+    // }
 
   }
 

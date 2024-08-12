@@ -5,6 +5,7 @@ import Title from './states/title';
 import Help from './states/help';
 import Play from './states/play';
 import Win from './states/win';
+import Tutorial from './states/tutorial';
 
 import {Sprite} from './entities/sprite';
 import {Text} from './entities/text';
@@ -34,6 +35,7 @@ o.states = {
   Help,
   Play,
   Win,
+  Tutorial,
   };
 o.ents = {
   Sprite,
