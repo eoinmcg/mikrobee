@@ -139,6 +139,11 @@ export default class Play {
 
     this.g.ents.reverse();
 
+    if (this.p1) {
+      this.p1.started = false;
+      this.p1.y = 32;
+    }
+
     if (level.muzak !== 'undefined') {
       this.g.mainMusic = AUDIO[level.muzak];
       this.g.mainMusic.currentTime = 0;
@@ -209,11 +214,11 @@ export default class Play {
     this.levelComplete = true;
     this.g.events = [];
     let cb = () => {
-    this.levelNum += 1;
-    this.levelData = Levels.levels[this.levelNum];
-    if (!this.levelData) {
-      this.g.changeState('Win');
-    }
+      this.levelNum += 1;
+      this.levelData = Levels.levels[this.levelNum];
+      if (!this.levelData) {
+        this.g.changeState('Win');
+      }
       this.loadLevel(this.levelData);
     }
     this.wiper.start(cb);

@@ -79,7 +79,7 @@ export default class Tutorial {
       g.draw.text(`BADDIES`, this.mainText, false, 20);
       this.baddies.fly.render();
       this.baddies.eye.render();
-      g.draw.rect(31, 41, 1, 1, 3);
+      g.draw.rect(31, 31, 1, 1, 3);
       this.baddies.creep.render();
     } else if (this.step === 3) {
       g.draw.text(`GRAB THE`, this.mainText, false, 10);
