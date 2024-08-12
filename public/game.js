@@ -1320,7 +1320,7 @@
       this.scoreText = g.H.mkFont(g, 1, 2);
       this.scoreTextShadow = g.H.mkFont(g, 1, 0);
       this.score = 0;
-      this.levelNum = this.o.levelNum || 0;
+      this.levelNum = this.o.levelNum || 2;
       this.levelData = levels_default.levels[this.levelNum];
       this.loadLevel(this.levelData);
       this.gameOver = false;
@@ -1546,6 +1546,7 @@
       this.mainTextShadow = g.H.mkFont(g, 1, 0);
       this.secondText = g.H.mkFont(g, 1, 1);
       this.canStart = false;
+      this.sfx = true;
       window.T = this;
     }
     init() {
@@ -1621,9 +1622,12 @@
         cb: () => {
           this.step += 1;
           if (this.step > 3) {
+            this.sfx = false;
             this.step = 1;
           }
-          this.g.audio.play("TIP");
+          if (this.sfx) {
+            this.g.audio.play("TIP");
+          }
           this.updateStep();
         }
       });

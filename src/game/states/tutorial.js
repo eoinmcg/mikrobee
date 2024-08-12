@@ -9,6 +9,7 @@ export default class Tutorial {
     this.secondText = g.H.mkFont(g, 1, 1);
 
     this.canStart = false;
+    this.sfx = true;
     window.T = this;
   }
 
@@ -98,9 +99,12 @@ export default class Tutorial {
       cb: () => {
         this.step += 1;
         if (this.step > 3) {
+          this.sfx = false;
           this.step = 1;
         }
-        this.g.audio.play('TIP');
+        if (this.sfx) {
+          this.g.audio.play('TIP');
+        }
         this.updateStep();
       },
     });

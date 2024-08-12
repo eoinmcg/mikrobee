@@ -19,7 +19,7 @@ export default class Play {
     this.scoreTextShadow = g.H.mkFont(g, 1, 0);
     this.score = 0;
 
-    this.levelNum = this.o.levelNum || 0;
+    this.levelNum = this.o.levelNum || 2;
     this.levelData = Levels.levels[this.levelNum];
     this.loadLevel(this.levelData);
 
