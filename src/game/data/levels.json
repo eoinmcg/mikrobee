@@ -1,0 +1,69 @@
+{
+  "levels": [
+    {
+      "title": "The Meadows",
+      "muzak": "undefined",
+      "dist": 1000,
+      "floor": 0,
+      "roof": 0,
+      "ents": ["Fly", "Shroom"],
+      "freq": 80,
+      "max": 8,
+      "bgSpeed": 1,
+      "bgCol": 15,
+      "bg": [
+        {"k": "Bg", "i": "bg_sky", "vx": 0, "y": 0, "o": 0.1},
+        {"k": "Bg", "i": "bg_hills", "vx": -0.02, "y": 0, "o": 0.1},
+        {"k": "Bg", "i": "bg_1", "vx": -0.2, "y": 41, "o": 0.2},
+        {"k": "Bg", "i": "ground_grass1", "vx": -0.5, "y": 57},
+        {"k": "Cloud", "i": "cloud1" },
+        {"k": "Cloud", "i": "cloud1" },
+        {"k": "Cloud", "i": "cloud2" }
+      ],
+      "spawns": [
+        {"k": "Shroom", "delay": 500 }
+      ]
+    },
+    {
+      "title": "The Forest",
+      "muzak": "undefined",
+      "dist": 2500,
+      "ents": ["Eye", "Creep"],
+      "freq": 60,
+      "max": 8,
+      "floor": 0,
+      "roof": 0,
+      "bgSpeed": 2,
+      "bgCol": 0,
+      "bg": [
+        {"k": "Bg", "i": "bg_thorns", "vx": -0.5, "y": 54},
+        {"k": "Bg", "i": "bg_trees", "vx": -0.2, "y": 0 },
+        {"k": "Cloud", "i": "cloud1" },
+        {"k": "Cloud", "i": "cloud1" },
+        {"k": "Bg", "i": "stars", "vx": -0, "y": 0, "o": 0.1}
+      ],
+      "spawns": [
+      ]
+    },
+    {
+      "title": "The Cave",
+      "muzak": "undefined",
+      "dist": 3000,
+      "ents": ["Fly", "Spike"],
+      "freq": 40,
+      "max": 8,
+      "floor": 62,
+      "roof": 2,
+      "bgSpeed": 1,
+      "bgCol": 0,
+      "bg": [
+        {"k": "Cave_bg"},
+        {"k": "Bg", "i": "cave_bg_teeth", "vx": -0.25, "y": 0, "o": 0.1}
+      ],
+      "spawns": [
+        {"k": "Spike", "delay": 200, "bottom": false },
+        {"k": "Spike", "delay": 250, "bottom": true }
+      ]
+    }
+  ]
+}

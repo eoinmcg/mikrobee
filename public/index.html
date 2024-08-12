@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<style type="text/css">
+body{margin:0;padding:0;background:#000;font-family:monospace;overflow:hidden;} 
+canvas#game{position:absolute;left:50%;top:50%;display:none;background:transparent;image-rendering: -moz-crisp-edges; image-rendering: -webkit-crisp-edges; image-rendering: pixelated; image-rendering: crisp-edges;
+  user-select:none;
+  -webkit-user-select:none;
+} 
+h1{left:0;line-height:200px;margin:auto;margin-top:-100px;position:absolute;top:50%; width:100%;text-align: center;} 
+#l{color:#fff;font-size: 150%;}
+.fader {
+  animation: fadeOut 2s ease-in-out;
+}
+@keyframes fader {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0;}
+}
+</style></head><body>
+<div id="l"><h1 id="h">Loading</h1></div><canvas id="game"></canvas>
+<script src="./game.js"></script>
+</body></html>
