@@ -99,6 +99,7 @@ export default class Tutorial {
         if (this.step > 3) {
           this.step = 1;
         }
+        this.g.audio.play('TIP');
         this.updateStep();
       },
     });

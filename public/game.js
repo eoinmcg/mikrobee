@@ -811,7 +811,7 @@
   };
 
   // src/game/data/images.js
-  var images_default = { "bee": "R0lGODlhAwACAKEDAC9ITeuJMJ2dnf///yH5BAEKAAMALAAAAAADAAIAAAIEnBYQBQA7", "bee1": "R0lGODlhAwAEAKEDAAAAALLc7/fiazGi8iH5BAEKAAMALAAAAAADAAQAAAIHnBYQNgNTAAA7", "bg": "R0lGODlhQABAAKECABsmMi9ITvfia/fiayH5BAEKAAIALAAAAABAAEAAAAL+hB2nmHvRHIAS1RldXrR2+WlXqEAbQ6InlrKgqZmhDD90duN0edtRJ7OphKxfo4YZqkg9XtCJXHJ20FfrOb1qW5PRiuEdhT3jV1nk+UZ9K2w11l5L2UwqfdNc4o0oogvcB/iXNPhRt5anl4XoVpQiV2QVtyVJlnY2JXZpabbZCYLpUwk3OTkKtdeY6Jh6iGVoxBdIWChLi7Saa6eIuvi4VXrqJFwS6hej+YmmnOm5jGxFrLQYTUra6pqN7YvnhxvrDRsuKohtzu2L3ktt3Z4lHQnNzJMsb0/v3Ayaj8/u//bO3Tped9QVPHjniLhZsGx9YwiOjkGCFB1NnAUwI5vDav+K8Tum71lIDsYE3fM4D+NGgSsDdrSI6lzMdDPHQSR3a2FOnIYu6lIFNGgwltOGER00st/JByVpJQWplORHky01FsVpFWbFn4zccCX08KbYWmOj7GLl86zas0irur2qEq6FqU6fzk15dynVqCj1QmokF3BbuGuFaqOJcGdZnWEVk63L9fDArX8rA+OYlUtdvlCZ0v2yufNez3hDCz5tGZ5hmYm1Uk7AOLbD2OFsuUZbs3VhOZaHvhwcTyTn0cS75CsAADs=", "bg2": "R0lGODlhQABAAMIFABMbJBUeKBgiLRsmMhwpNDGi8jGi8jGi8iH5BAEKAAcALAAAAABAAEAAAAP+CLoQ/CrISau9OMO2lRBDKI5kaQ7ZtTnL535nLJ/p+t7wrOsaA4Y41244rPhIQaKSN2mZbsuorCKtWifWbBSr7e643nBMIi6byOZ0CD0iDNzqayCuhM/Y9JnbPp7nxXh/WoGCcoVdYIdViYpbhI1Kj5BFfpOOllKSmJtAL0+em0kjomd5QTkDpz8llWmqMK+rIppdsamvrK1mtrYktG1RvLi+uid7waciqmfFuzhIzzSCUNSg0o2kPNjJX81qvXfersPhh+AifCi/Yuc06+zc4eLf0Uzz9EKU95wjjPx9+/6pC/jPH6R07gghjHNM3jtOVAQCfLgposRcFC4yy6gxkRhHKVBKhFySAdnITif1pdixDGU9lSkwKMPVzmHMFLFYdGggc+DNnxJ2RhDKEyiFBAA7", "bg_1": "R0lGODlhQAAVAIABABsmMv///yH5BAEKAAEALAAAAABAABUAAAKRjI+pywt9HpxAzhtqexzv6GVJZSlkyFglNWqpy36iaZRr55CreY8zjzjVMDuerVfMHCUwSDK49BWF0N9QGUkym83aCQZWcbfZlBfX1VHD0OU46D3P0uqs2C7WVctqDRm/5iJUd/YVJ9fH0VdY9+Wol/jIGElZ+ahoCemXydnp+QkaKjpKWmp6ipqqusra6mpaAAA7", "bg_hills": "R0lGODlhQABAAIABABsmMv///yH5BAEKAAEALAAAAABAAEAAAAKNjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jec6BPT9fvAJJz9NkSccIo8WpSMJXQIw0Qb0+kxertgAV2sFV77kcthJKauxbHFXsY7Lh2bE/I7/BvP8/tQPGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipoahVoAADs=", "bg_roof": "R0lGODlhQAAIAKEAAEk8K6RkIkk8K0k8KyH5BAEKAAIALAAAAABAAAgAAAIwhI+py+2/AjxS1YlpBne77oXiGJTmiYKi6gnuC8dCSptjhMj6zrt1vekJh0TfL1UAADs=", "bg_sky": "R0lGODlhQAAUAIAAAP///////yH5BAEKAAEALAAAAABAABQAAAI1hI+py+0Po5y02ouz3hyHD4biSJbmiabqypbdC8fyTNdxi+f6zuP2D3z1hsSi8YhMKpfMYQEAOw==", "bg_thorns": "R0lGODlhQAAKAIABAC9ITr4mMyH5BAEKAAEALAAAAABAAAoAAAJVjI+py+1vQJKw2htpxHxq+wFfMHaKVj7jCqUOJR6xSyKxLef65G11BgzdRMQNKoO6kYq+IO6XHBJhSqo1+pz+fDDkbPoNL8Pk4RgMXJ7B7Lb7DY+3CwA7", "bg_tree_tops": "R0lGODlhQABAAIABABsmMr4mMyH5BAEKAAEALAAAAABAAEAAAAJyhI+py+0Po5y02ouz3rz7D4biCAZOgG6mkk4tgsayvMTsa9CRns/+DwwCe7dZT4hMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4yFQAADs=", "bg_trees": "R0lGODlhQABAAIABABsmMr4mMyH5BAEKAAEALAAAAABAAEAAAAL+hI+py+0Po5y02ouz3rz7D4biSDZByQXqCazusjLsMVe1y+Ivrd86b1A9hC1csOf78YxHZK3ZgzKlseWu6FQ4c0iE0vvNwsRiKtFsjSbKZezUXYV/08x2lz7bPuU7uxptdoVX5TdnuKVFdhcINqWXeFf49ve4pvhH13hVqakkKUiJaBmKucg3GIfKVcrqKNpZZyob9joa2zo5x3emGpiU69rmu/q2a3vG2bv7C0orvEwMLB2XPOwLy0tqar2MzYxcy/2Zqo0pPnsYvA096I2tuif6nL4Zzt7djpc/Fok+DT7vEr1m6szdG5fN2Tp5/giSs8cQl0NqEAX+S1hQ10Fvg3LeDdujDx8jWPAgqUH4LU/FfhIfZiy2sSXGegFZDnRJc6HFiTgp1jzZsCdAnTYvpix57NbNmT6JApV59KNJT0GZDjUYcWlUaPF2CrWq8idVqB65TlVqtGy1mFrVrnzaNqTZpH2qbl2bNa1cFwUAADs=", "bullet": "R0lGODlhAgABAKECAL4mM+uJMP///////yH5BAEKAAIALAAAAAACAAEAAAICDAoAOw==", "cave_bg_teeth": "R0lGODlhQABAAIABAP///0k8KyH5BAEKAAEALAAAAABAAEAAAAL+hI+py+0Po5y02tsC0yrw8yVhRoqLNwKemKIde44uK8+Gfa+Ijee6H0L9VLiecDc7gpTEovDzBAaVTw2zyqkuo02XtqvDcrFgr5iM1p7N6vT6bW3D5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKopX5lcalXfKJyVXx2qqmnX32rf1tVZq+6fr5Eobi/vLuyKGNDY7TINKlgzMzKtM9QVNexbdwlXWke02zbp9la1rfFQMnqL9fX59GjNEDiVuu/7qjg427m5PTd8PlIGOCb59BOdtCPiuy8GEW5QBPOiPHMAaDEFAPDHRQY8hJho3lLj4EQYGjw9HmsQY8qRKFStbQrjnMqbMmTRrKigAADs=", "cherry": "R0lGODlhCAAIAKEDAL4mM0SJGuBvizGi8iH5BAEKAAMALAAAAAAIAAgAAAISnBd5yBcGgBtARCqjtrnf9R0FADs=", "circle": "R0lGODlhCAAIAIABAP///zGi8iH5BAEKAAEALAAAAAAIAAgAAAIMTIBgl8gNo5wvrWYKADs=", "cloud1": "R0lGODlhDwALAMIEAOz9//f7/v3//v7//////////////////yH5BAEKAAcALAAAAAAPAAsAAAMYeErcAyqeRokIclaaN19eKI5kaZ6VRh4JADs=", "cloud2": "R0lGODlhCAAHAKECAPT///f//////////yH5BAEKAAMALAAAAAAIAAcAAAIPnIFmIQ3a4mAx0ipuNXgUADs=", "creep": "R0lGODlhCAAEAKEDAL4mM6POJ/////fiayH5BAEKAAMALAAAAAAIAAQAAAIMXDKZAWyHxGltxVAAADs=", "dot": "R0lGODlhAQABAIABAP///zGi8iH5BAEKAAEALAAAAAABAAEAAAICRAEAOw==", "eye": "R0lGODlhBAAEAKECAJ2dnf////fia/fiayH5BAEKAAIALAAAAAAEAAQAAAIGVGKnAdYFADs=", "fly": "R0lGODlhCQACAMICAEk8Ky9ITb4mM0SJGr4mM74mM74mM74mMyH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAQALAAAAAAJAAIAAAMKKBEyIwAs4kgkCQA7", "font": "R0lGODlhmwAFAIABAAAAADGi8iH5BAEKAAEALAAAAACbAAUAAAJ4hGOAd6sZFpowPhrxhZz5x2ji5pRTyVEfulaWRV6vfNayksV5O/b53NMBcbjX0JY50pYwkFHDAxGTTlsUpZIadRViYzo1tVazcfHHRSOVWx9UyKK2wym6+nRei47AtkTbAbgTc1X3VvOXtfXFhkfmpVUWqeiSZFkAADs=", "ground_grass1": "R0lGODlhQAAHAMIHAAAAAEk8K0WJGlCBKEaDNffia+Bvi////yH5BAEKAAcALAAAAABAAAcAAAM+eHq2/jDCIqt14mqZt1/d12jhR10lRBBPCglwDG9uJsftrc9RHPy/G2cnAAKJsIHRiCwunwPkc0qtWq9YagIAOw==", "heart": "R0lGODlhBQAFAIABAL4mMzGi8iH5BAEKAAEALAAAAAAFAAUAAAIIDGygu3mBQgEAOw==", "help": "R0lGODlhCAAIAIABAOBvizGi8iH5BAEKAAEALAAAAAAIAAgAAAIPTIBgl8jLnGwqpmidaaYAADs=", "hex": "R0lGODlhCwAKAKECABsmMi9ITv///////yH5BAEKAAIALAAAAAALAAoAAAIalINoi+B6gpuqTWov1jdxUEldwIgguQgJJBQAOw==", "melon": "R0lGODlhBgAGAMIEAAAAAL4mM0SJGv///zGi8jGi8jGi8jGi8iH5BAEKAAQALAAAAAAGAAYAAAMOGLoToKMxIYeg0ZJ7SQIAOw==", "pointer": "R0lGODlhBAAFAKECAAAAAP////fia/fiayH5BAEKAAIALAAAAAAEAAUAAAIIjGWAEKIsIigAOw==", "progress": "R0lGODdhQAABAIABAP///74mMywAAAAAQAABAAACB4SPqcvtXQAAOw==", "shroom": "R0lGODlhCAAKAKEAAL4mM+Bvi////74mMyH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAMALAAAAAAIAAoAAAIVHDIToOAPl5PzJZEGvnnrDnLiN2IFADs=", "skull": "R0lGODlhBAAEAIABAOBvizGi8iH5BAEKAAEALAAAAAAEAAQAAAIFhB2Ql1kAOw==", "spike": "R0lGODlhAwAQAIABAKRkIkk8KyH5BAEKAAEALAAAAAADABAAAAIMDGJ4yesKmzqg2loAADs=", "spike2": "R0lGODlhAwAIAIABAKRkIkk8KyH5BAEKAAEALAAAAAADAAgAAAIIDGJ4aQcPXwEAOw==", "splat0": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKRI4WuqD+HjquAAA7", "splat1": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKRI4Ba63KkDmTFgA7", "splat2": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKjA0Be8vqWlJHFQA7", "star": "R0lGODlhBgADAKECAOuJMffia74mM74mMyH5BAEKAAIALAAAAAAGAAMAAAIHFGwQF4IHCgA7", "star2": "R0lGODlhBAAEAIABAPfiazGi8iH5BAEKAAEALAAAAAAEAAQAAAIGDGKgaQgFADs=", "stars": "R0lGODlhQAArAIABAP////fiayH5BAEKAAEALAAAAABAACsAAAJVjI+py+0Po5y02ouz3rz7D1ZASIrlGYxoCKiYuxpt/LUwndn4Zt+7qPtdekJLb1aUHJEnHzCYjEqn1Kq147yustqu9wsOi8fkctOMTnu5al6bwX5XCwA7", "target": "R0lGODlhAwADAIABAP////fiayH5BAEKAAEALAAAAAADAAMAAAIDDIxXADs=", "title": "R0lGODlhQABAAIABAAAAAL4mMyH5BAEKAAEALAAAAABAAEAAAAJxhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8dIcNC2E+Surht0cwPkbL3R7SgUEpFJprHW/EmjvOrv6WtqtdPrleTlJpXLJVmGTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4WAAAOw==", "worm": "R0lGODlhDAAEAKECAL4mM6POJzGi8jGi8iH5BAEKAAIALAAAAAAMAAQAAAINlAKme2HIgmsTyXelLAA7" };
+  var images_default = { "bee": "R0lGODlhAwACAKEDAC9ITeuJMJ2dnf///yH5BAEKAAMALAAAAAADAAIAAAIEnBYQBQA7", "bee1": "R0lGODlhAwAEAKEDAAAAALLc7/fiazGi8iH5BAEKAAMALAAAAAADAAQAAAIHnBYQNgNTAAA7", "bg": "R0lGODlhQABAAKECABsmMi9ITvfia/fiayH5BAEKAAIALAAAAABAAEAAAAL+hB2nmHvRHIAS1RldXrR2+WlXqEAbQ6InlrKgqZmhDD90duN0edtRJ7OphKxfo4YZqkg9XtCJXHJ20FfrOb1qW5PRiuEdhT3jV1nk+UZ9K2w11l5L2UwqfdNc4o0oogvcB/iXNPhRt5anl4XoVpQiV2QVtyVJlnY2JXZpabbZCYLpUwk3OTkKtdeY6Jh6iGVoxBdIWChLi7Saa6eIuvi4VXrqJFwS6hej+YmmnOm5jGxFrLQYTUra6pqN7YvnhxvrDRsuKohtzu2L3ktt3Z4lHQnNzJMsb0/v3Ayaj8/u//bO3Tped9QVPHjniLhZsGx9YwiOjkGCFB1NnAUwI5vDav+K8Tum71lIDsYE3fM4D+NGgSsDdrSI6lzMdDPHQSR3a2FOnIYu6lIFNGgwltOGER00st/JByVpJQWplORHky01FsVpFWbFn4zccCX08KbYWmOj7GLl86zas0irur2qEq6FqU6fzk15dynVqCj1QmokF3BbuGuFaqOJcGdZnWEVk63L9fDArX8rA+OYlUtdvlCZ0v2yufNez3hDCz5tGZ5hmYm1Uk7AOLbD2OFsuUZbs3VhOZaHvhwcTyTn0cS75CsAADs=", "bg2": "R0lGODlhQABAAMIFABMbJBUeKBgiLRsmMhwpNDGi8jGi8jGi8iH5BAEKAAcALAAAAABAAEAAAAP+CLoQ/CrISau9OMO2lRBDKI5kaQ7ZtTnL535nLJ/p+t7wrOsaA4Y41244rPhIQaKSN2mZbsuorCKtWifWbBSr7e643nBMIi6byOZ0CD0iDNzqayCuhM/Y9JnbPp7nxXh/WoGCcoVdYIdViYpbhI1Kj5BFfpOOllKSmJtAL0+em0kjomd5QTkDpz8llWmqMK+rIppdsamvrK1mtrYktG1RvLi+uid7waciqmfFuzhIzzSCUNSg0o2kPNjJX81qvXfersPhh+AifCi/Yuc06+zc4eLf0Uzz9EKU95wjjPx9+/6pC/jPH6R07gghjHNM3jtOVAQCfLgposRcFC4yy6gxkRhHKVBKhFySAdnITif1pdixDGU9lSkwKMPVzmHMFLFYdGggc+DNnxJ2RhDKEyiFBAA7", "bg_1": "R0lGODlhQAAVAIABABsmMv///yH5BAEKAAEALAAAAABAABUAAAKRjI+pywt9HpxAzhtqexzv6GVJZSlkyFglNWqpy36iaZRr55CreY8zjzjVMDuerVfMHCUwSDK49BWF0N9QGUkym83aCQZWcbfZlBfX1VHD0OU46D3P0uqs2C7WVctqDRm/5iJUd/YVJ9fH0VdY9+Wol/jIGElZ+ahoCemXydnp+QkaKjpKWmp6ipqqusra6mpaAAA7", "bg_hills": "R0lGODlhQABAAIABABsmMv///yH5BAEKAAEALAAAAABAAEAAAAKNjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jec6BPT9fvAJJz9NkSccIo8WpSMJXQIw0Qb0+kxertgAV2sFV77kcthJKauxbHFXsY7Lh2bE/I7/BvP8/tQPGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipoahVoAADs=", "bg_roof": "R0lGODlhQAAIAKEAAEk8K6RkIkk8K0k8KyH5BAEKAAIALAAAAABAAAgAAAIwhI+py+2/AjxS1YlpBne77oXiGJTmiYKi6gnuC8dCSptjhMj6zrt1vekJh0TfL1UAADs=", "bg_sky": "R0lGODlhQAAUAIAAAP///////yH5BAEKAAEALAAAAABAABQAAAI1hI+py+0Po5y02ouz3hyHD4biSJbmiabqypbdC8fyTNdxi+f6zuP2D3z1hsSi8YhMKpfMYQEAOw==", "bg_thorns": "R0lGODlhQAAKAIABAC9ITr4mMyH5BAEKAAEALAAAAABAAAoAAAJVjI+py+1vQJKw2htpxHxq+wFfMHaKVj7jCqUOJR6xSyKxLef65G11BgzdRMQNKoO6kYq+IO6XHBJhSqo1+pz+fDDkbPoNL8Pk4RgMXJ7B7Lb7DY+3CwA7", "bg_tree_tops": "R0lGODlhQABAAIABABsmMr4mMyH5BAEKAAEALAAAAABAAEAAAAJyhI+py+0Po5y02ouz3rz7D4biCAZOgG6mkk4tgsayvMTsa9CRns/+DwwCe7dZT4hMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4yFQAADs=", "bg_trees": "R0lGODlhQABAAIABABsmMr4mMyH5BAEKAAEALAAAAABAAEAAAAL+hI+py+0Po5y02ouz3rz7D4biSDZByQXqCazusjLsMVe1y+Ivrd86b1A9hC1csOf78YxHZK3ZgzKlseWu6FQ4c0iE0vvNwsRiKtFsjSbKZezUXYV/08x2lz7bPuU7uxptdoVX5TdnuKVFdhcINqWXeFf49ve4pvhH13hVqakkKUiJaBmKucg3GIfKVcrqKNpZZyob9joa2zo5x3emGpiU69rmu/q2a3vG2bv7C0orvEwMLB2XPOwLy0tqar2MzYxcy/2Zqo0pPnsYvA096I2tuif6nL4Zzt7djpc/Fok+DT7vEr1m6szdG5fN2Tp5/giSs8cQl0NqEAX+S1hQ10Fvg3LeDdujDx8jWPAgqUH4LU/FfhIfZiy2sSXGegFZDnRJc6HFiTgp1jzZsCdAnTYvpix57NbNmT6JApV59KNJT0GZDjUYcWlUaPF2CrWq8idVqB65TlVqtGy1mFrVrnzaNqTZpH2qbl2bNa1cFwUAADs=", "bullet": "R0lGODlhAgABAKECAL4mM+uJMP///////yH5BAEKAAIALAAAAAACAAEAAAICDAoAOw==", "cave_bg_teeth": "R0lGODlhQABAAIABAP///0k8KyH5BAEKAAEALAAAAABAAEAAAAL+hI+py+0Po5y02tsC0yrw8yVhRoqLNwKemKIde44uK8+Gfa+Ijee6H0L9VLiecDc7gpTEovDzBAaVTw2zyqkuo02XtqvDcrFgr5iM1p7N6vT6bW3D5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKopX5lcalXfKJyVXx2qqmnX32rf1tVZq+6fr5Eobi/vLuyKGNDY7TINKlgzMzKtM9QVNexbdwlXWke02zbp9la1rfFQMnqL9fX59GjNEDiVuu/7qjg427m5PTd8PlIGOCb59BOdtCPiuy8GEW5QBPOiPHMAaDEFAPDHRQY8hJho3lLj4EQYGjw9HmsQY8qRKFStbQrjnMqbMmTRrKigAADs=", "cherry": "R0lGODlhCAAIAKEDAL4mM0SJGuBvizGi8iH5BAEKAAMALAAAAAAIAAgAAAISnBd5yBcGgBtARCqjtrnf9R0FADs=", "circle": "R0lGODlhCAAIAIABAP///zGi8iH5BAEKAAEALAAAAAAIAAgAAAIMTIBgl8gNo5wvrWYKADs=", "cloud1": "R0lGODlhDwALAMIEAOz9//f7/v3//v7//////////////////yH5BAEKAAcALAAAAAAPAAsAAAMYeErcAyqeRokIclaaN19eKI5kaZ6VRh4JADs=", "cloud2": "R0lGODlhCAAHAKECAPT///f//////////yH5BAEKAAMALAAAAAAIAAcAAAIPnIFmIQ3a4mAx0ipuNXgUADs=", "creep": "R0lGODlhCAAEAKEDAL4mM6POJ/////fiayH5BAEKAAMALAAAAAAIAAQAAAIMXDKZAWyHxGltxVAAADs=", "dot": "R0lGODlhAQABAIABAP///zGi8iH5BAEKAAEALAAAAAABAAEAAAICRAEAOw==", "eye": "R0lGODlhBAAEAKECAJ2dnf////fia/fiayH5BAEKAAIALAAAAAAEAAQAAAIGVGKnAdYFADs=", "fly": "R0lGODlhCQACAMICAEk8Ky9ITb4mM0SJGr4mM74mM74mM74mMyH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAQALAAAAAAJAAIAAAMKKBEyIwAs4kgkCQA7", "font": "R0lGODlhmwAFAIABAAAAAEk8KyH5BAEKAAEALAAAAACbAAUAAAJ4hGOAd6sZFpowPhrxhZz5x2ji5pRTyVEfulaWRV6vfNayksV5O/b53NMBcbjX0JY50pYwkFHDAxGTTlsUpZIadRViYzo1tVazcfHHRSOVWx9UyKK2wym6+nRei47PtkTbAbgTc1X3VvOXtfXFhkfmpVUWqZiSZFkAADs=", "ground_grass1": "R0lGODlhQAAHAMIHAAAAAEk8K0WJGlCBKEaDNffia+Bvi////yH5BAEKAAcALAAAAABAAAcAAAM+eHq2/jDCIqt14mqZt1/d12jhR10lRBBPCglwDG9uJsftrc9RHPy/G2cnAAKJsIHRiCwunwPkc0qtWq9YagIAOw==", "heart": "R0lGODlhBQAFAIABAL4mMzGi8iH5BAEKAAEALAAAAAAFAAUAAAIIDGygu3mBQgEAOw==", "help": "R0lGODlhCAAIAIABAOBvizGi8iH5BAEKAAEALAAAAAAIAAgAAAIPTIBgl8jLnGwqpmidaaYAADs=", "hex": "R0lGODlhCwAKAKECABsmMi9ITv///////yH5BAEKAAIALAAAAAALAAoAAAIalINoi+B6gpuqTWov1jdxUEldwIgguQgJJBQAOw==", "melon": "R0lGODlhBgAGAMIEAAAAAL4mM0SJGv///zGi8jGi8jGi8jGi8iH5BAEKAAQALAAAAAAGAAYAAAMOGLoToKMxIYeg0ZJ7SQIAOw==", "pointer": "R0lGODlhBAAFAKECAAAAAP////fia/fiayH5BAEKAAIALAAAAAAEAAUAAAIIjGWAEKIsIigAOw==", "progress": "R0lGODdhQAABAIABAP///74mMywAAAAAQAABAAACB4SPqcvtXQAAOw==", "shroom": "R0lGODlhCAAKAKEAAL4mM+Bvi////74mMyH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAMALAAAAAAIAAoAAAIVHDIToOAPl5PzJZEGvnnrDnLiN2IFADs=", "skull": "R0lGODlhBAAEAIABAOBvizGi8iH5BAEKAAEALAAAAAAEAAQAAAIFhB2Ql1kAOw==", "spike": "R0lGODlhAwAQAIABAKRkIkk8KyH5BAEKAAEALAAAAAADABAAAAIMDGJ4yesKmzqg2loAADs=", "spike2": "R0lGODlhAwAIAIABAKRkIkk8KyH5BAEKAAEALAAAAAADAAgAAAIIDGJ4aQcPXwEAOw==", "splat0": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKRI4WuqD+HjquAAA7", "splat1": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKRI4Ba63KkDmTFgA7", "splat2": "R0lGODlhBgAGAIABAAAAAPfiayH5BAEKAAEALAAAAAAGAAYAAAIKjA0Be8vqWlJHFQA7", "star": "R0lGODlhBgADAKECAOuJMffia74mM74mMyH5BAEKAAIALAAAAAAGAAMAAAIHFGwQF4IHCgA7", "star2": "R0lGODlhBAAEAIABAPfiazGi8iH5BAEKAAEALAAAAAAEAAQAAAIGDGKgaQgFADs=", "stars": "R0lGODlhQAArAIABAP////fiayH5BAEKAAEALAAAAABAACsAAAJVjI+py+0Po5y02ouz3rz7D1ZASIrlGYxoCKiYuxpt/LUwndn4Zt+7qPtdekJLb1aUHJEnHzCYjEqn1Kq147yustqu9wsOi8fkctOMTnu5al6bwX5XCwA7", "target": "R0lGODlhAwADAIABAP////fiayH5BAEKAAEALAAAAAADAAMAAAIDDIxXADs=", "title": "R0lGODlhQABAAIABAAAAAEk8KyH5BAEKAAEALAAAAABAAEAAAAJxhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8dIcNC2E+Surht0cwPkbL3R7SgUEpFJprHW/EmjvOrv6WtqtdPrleTlJpXLJVmGTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4WAAAOw==", "worm": "R0lGODlhDAAEAKECAL4mM6POJzGi8jGi8iH5BAEKAAIALAAAAAAMAAQAAAINlAKme2HIgmsTyXelLAA7" };
 
   // src/game/data/sfx.js
   var Sfx = {
@@ -914,6 +914,146 @@
     tracks
   };
 
+  // src/game/entities/sprite.js
+  var Sprite = class {
+    constructor(g, o2) {
+      this.g = g;
+      this.o = o2;
+      this.id = `id-${Math.random().toString(36).substr(2, 16)}`;
+      this.dead = false;
+      this.remove = false;
+      this.offsetY = 0;
+      this.name = o2.i;
+      for (let n in o2) {
+        this[n] = o2[n];
+      }
+      this.lastPos = { x: this.x, y: this.y };
+      this.flip = { x: 0, y: 0 };
+      this.scale = o2.scale || 1;
+      this.frame = o2.frame || 1;
+      this.frames = o2.frames || 1;
+      this.frameRate = o2.frameRate || 80;
+      this.frameNext = o2.frameNext || 0;
+      this.hurtTime = 0;
+      if (o2.i) {
+        this.mkImg(o2.i);
+      }
+      this.hurt = false;
+      this.anims = { idle: { frames: [1], rate: 80 } };
+      this.changeAnim("idle");
+    }
+    update(dt) {
+      if (this.collidesWith) {
+        this.collidesWith.forEach((group) => {
+          this.hitGroup(group);
+        });
+      }
+      if (this.hurtTime > 0) {
+        this.hurt = true;
+        this.hurtTime--;
+      } else {
+        this.hurt = false;
+      }
+      this.updateAnim(dt);
+    }
+    render() {
+      let g = this.g, i = this.hurt ? this.iHurt : this.i, frame = this.frame;
+      if (i) {
+        if (this.flip.y) {
+          i = g.draw.flip(i, 0, 1);
+        }
+        if (this.flip.x) {
+          i = g.draw.flip(i, 1, 0);
+          frame = this.frames - this.frame + 1;
+        }
+        g.draw.ctx.drawImage(
+          i,
+          frame * this.w - this.w,
+          0,
+          this.w,
+          this.h,
+          ~~this.x,
+          ~~this.y + this.offsetY,
+          this.w,
+          this.h
+        );
+      } else {
+        g.draw.rect(this.x, this.y, this.w, this.h, this.col);
+      }
+    }
+    updateAnim(step) {
+      if (this.frameNext < 0) {
+        this.frameNext = this.anim.rate;
+        this.anim.counter += 1;
+        if (this.anim.counter >= this.anim.frames.length) {
+          if (this.anim.next) {
+            this.changeAnim(this.anim.next);
+          } else {
+            this.anim.counter = 0;
+          }
+        }
+        this.frame = this.anim.frames[this.anim.counter];
+      }
+      this.frameNext -= step;
+    }
+    hitGroup(group) {
+      this.g.ents.forEach((e) => {
+        if (e && e.group === group && e.id !== this.id && this.hit(e)) {
+          this.receiveDamage(e);
+          e.doDamage(this);
+        }
+      });
+    }
+    hit(o2) {
+      return !(o2.y + o2.h < this.y || o2.y > this.y + this.h || o2.x + o2.w < this.x || o2.x > this.x + this.w);
+    }
+    receiveDamage(o2) {
+    }
+    doDamage(o2) {
+    }
+    isOffScreen() {
+      let g = this.g;
+      return this.x < -this.w || this.x > g.w + this.w || this.y < -this.h || this.y > g.h + this.h;
+    }
+    kill() {
+      this.dead = this.remove = true;
+    }
+    getAngle(x, y) {
+      let dx = x - this.x;
+      let dy = y - this.y;
+      return Math.atan2(dy, dx);
+    }
+    offScreen() {
+      return this.x < 0 || this.x > W - this.w || this.y < 0 || this.y > H - this.h;
+    }
+    mkImg(name) {
+      if (!this.i) {
+        return;
+      }
+      let g = this.g;
+      this.i = g.draw.resize(g.imgs[name], this.scale);
+      this.w = this.i.width / this.frames;
+      this.h = this.i.height;
+      let hurtKey = `${this.name}_hurt`;
+      if (!this.g.imgs[hurtKey]) {
+        this.iHurt = g.draw.color(this.i, g.data.pal[3]);
+        this.g.imgs[hurtKey] = this.iHurt;
+      } else {
+        this.iHurt = g.imgs[hurtKey];
+      }
+    }
+    changeAnim(name) {
+      if (this.anim && this.anim.name && this.anim.name === name) {
+        return;
+      }
+      this.anim = this.anims[name];
+      this.anim.name = name;
+      this.anim.counter = 0;
+      this.frame = this.anim.frames[0];
+      this.frameNext = this.anim.rate;
+    }
+  };
+
   // src/game/states/title.js
   var Title = class {
     constructor(g) {
@@ -923,13 +1063,55 @@
     }
     init() {
       this.hi = this.g.H.getHi();
+      this.initFade = false;
+      this.fade = 1;
       this.fader = 0;
       this.canStart = false;
+      this.bee = new Sprite(this.g, { i: "bee", x: 0, y: 20, scale: 1 });
+    }
+    update(dt) {
+      let g = this.g;
+      for (let e of this.g.ents)
+        e.update(dt);
+      if (this.bee.x < 64) {
+        this.bee.x += 0.5;
+        if (this.bee.x % 4 === 0 && this.bee.x > 5 && this.bee.x < 54) {
+          this.g.boom(this.bee.x, this.bee.y, 2, 4);
+        }
+      } else if (this.bee.x === 64 && !this.initFade) {
+        this.initFade = true;
+        this.showControls();
+      }
+      if (this.initFade && this.fade > 0.01) {
+        this.fade -= 0.01;
+      }
+    }
+    render() {
+      const g = this.g;
+      g.draw.clear(0);
+      let x = this.bee.x - 64;
+      this.g.draw.rect(x, 16, 64, 4, 8);
+      this.g.draw.rect(x, 20, 64, 4, 7);
+      this.g.draw.ctx.globalAlpha = this.fade;
+      this.g.draw.rect(x, 16, 64, 8, 2);
+      this.g.draw.ctx.globalAlpha = 1;
+      this.g.draw.img(g.imgs.title, 0, 0);
+      this.g.draw.ctx.globalAlpha = 0.3;
+      this.g.draw.img(this.g.imgs["stars"], 0, -32);
+      this.g.draw.img(this.g.imgs["bg_hills"], 0, 0);
+      this.g.draw.img(this.g.imgs["bg_1"], 0, 44);
+      this.g.draw.ctx.globalAlpha = 1;
+      for (let n of this.g.ents)
+        n.render();
+      this.bee.render();
+      g.draw.img(g.imgs.pointer, g.input.m.x, g.input.m.y);
+    }
+    showControls() {
       this.g.spawn("Control", {
         x: 54,
         y: 1,
         textCol: 1,
-        clickCol: 3,
+        clickCol: 12,
         col: 0,
         w: 10,
         h: 10,
@@ -966,21 +1148,6 @@
           this.canStart = true;
         }
       });
-    }
-    update(dt) {
-      let g = this.g, i = g.input.keys;
-      for (let e of this.g.ents)
-        e.update(dt);
-    }
-    render() {
-      const g = this.g;
-      g.draw.clear(0);
-      this.g.draw.rect(0, 16, 64, 4, 8);
-      this.g.draw.rect(0, 20, 64, 4, 7);
-      this.g.draw.img(g.imgs.title, 0, 0);
-      for (let n of this.g.ents)
-        n.render();
-      g.draw.img(g.imgs.pointer, g.input.m.x, g.input.m.y);
     }
   };
 
@@ -1391,146 +1558,6 @@
     }
   };
 
-  // src/game/entities/sprite.js
-  var Sprite = class {
-    constructor(g, o2) {
-      this.g = g;
-      this.o = o2;
-      this.id = `id-${Math.random().toString(36).substr(2, 16)}`;
-      this.dead = false;
-      this.remove = false;
-      this.offsetY = 0;
-      this.name = o2.i;
-      for (let n in o2) {
-        this[n] = o2[n];
-      }
-      this.lastPos = { x: this.x, y: this.y };
-      this.flip = { x: 0, y: 0 };
-      this.scale = o2.scale || 1;
-      this.frame = o2.frame || 1;
-      this.frames = o2.frames || 1;
-      this.frameRate = o2.frameRate || 80;
-      this.frameNext = o2.frameNext || 0;
-      this.hurtTime = 0;
-      if (o2.i) {
-        this.mkImg(o2.i);
-      }
-      this.hurt = false;
-      this.anims = { idle: { frames: [1], rate: 80 } };
-      this.changeAnim("idle");
-    }
-    update(dt) {
-      if (this.collidesWith) {
-        this.collidesWith.forEach((group) => {
-          this.hitGroup(group);
-        });
-      }
-      if (this.hurtTime > 0) {
-        this.hurt = true;
-        this.hurtTime--;
-      } else {
-        this.hurt = false;
-      }
-      this.updateAnim(dt);
-    }
-    render() {
-      let g = this.g, i = this.hurt ? this.iHurt : this.i, frame = this.frame;
-      if (i) {
-        if (this.flip.y) {
-          i = g.draw.flip(i, 0, 1);
-        }
-        if (this.flip.x) {
-          i = g.draw.flip(i, 1, 0);
-          frame = this.frames - this.frame + 1;
-        }
-        g.draw.ctx.drawImage(
-          i,
-          frame * this.w - this.w,
-          0,
-          this.w,
-          this.h,
-          ~~this.x,
-          ~~this.y + this.offsetY,
-          this.w,
-          this.h
-        );
-      } else {
-        g.draw.rect(this.x, this.y, this.w, this.h, this.col);
-      }
-    }
-    updateAnim(step) {
-      if (this.frameNext < 0) {
-        this.frameNext = this.anim.rate;
-        this.anim.counter += 1;
-        if (this.anim.counter >= this.anim.frames.length) {
-          if (this.anim.next) {
-            this.changeAnim(this.anim.next);
-          } else {
-            this.anim.counter = 0;
-          }
-        }
-        this.frame = this.anim.frames[this.anim.counter];
-      }
-      this.frameNext -= step;
-    }
-    hitGroup(group) {
-      this.g.ents.forEach((e) => {
-        if (e && e.group === group && e.id !== this.id && this.hit(e)) {
-          this.receiveDamage(e);
-          e.doDamage(this);
-        }
-      });
-    }
-    hit(o2) {
-      return !(o2.y + o2.h < this.y || o2.y > this.y + this.h || o2.x + o2.w < this.x || o2.x > this.x + this.w);
-    }
-    receiveDamage(o2) {
-    }
-    doDamage(o2) {
-    }
-    isOffScreen() {
-      let g = this.g;
-      return this.x < -this.w || this.x > g.w + this.w || this.y < -this.h || this.y > g.h + this.h;
-    }
-    kill() {
-      this.dead = this.remove = true;
-    }
-    getAngle(x, y) {
-      let dx = x - this.x;
-      let dy = y - this.y;
-      return Math.atan2(dy, dx);
-    }
-    offScreen() {
-      return this.x < 0 || this.x > W - this.w || this.y < 0 || this.y > H - this.h;
-    }
-    mkImg(name) {
-      if (!this.i) {
-        return;
-      }
-      let g = this.g;
-      this.i = g.draw.resize(g.imgs[name], this.scale);
-      this.w = this.i.width / this.frames;
-      this.h = this.i.height;
-      let hurtKey = `${this.name}_hurt`;
-      if (!this.g.imgs[hurtKey]) {
-        this.iHurt = g.draw.color(this.i, g.data.pal[3]);
-        this.g.imgs[hurtKey] = this.iHurt;
-      } else {
-        this.iHurt = g.imgs[hurtKey];
-      }
-    }
-    changeAnim(name) {
-      if (this.anim && this.anim.name && this.anim.name === name) {
-        return;
-      }
-      this.anim = this.anims[name];
-      this.anim.name = name;
-      this.anim.counter = 0;
-      this.frame = this.anim.frames[0];
-      this.frameNext = this.anim.rate;
-    }
-  };
-
   // src/game/states/tutorial.js
   var Tutorial = class {
     constructor(g) {
@@ -1615,6 +1642,7 @@
           if (this.step > 3) {
             this.step = 1;
           }
+          this.g.audio.play("TIP");
           this.updateStep();
         }
       });
