@@ -680,7 +680,7 @@
         this.initAudio();
         const bee = this.draw.resize(this.imgs.bee, 16);
         this.favIcon(bee);
-        if (this.production) {
+        if (!this.production) {
           this.stats = new stats_default();
           this.stats.showPanel(0);
         }
@@ -725,7 +725,7 @@
       this.state.init();
     }
     loop() {
-      if (this.production) {
+      if (!this.production) {
         this.stats.begin();
       }
       this.frameCurr = helpers_default.timeStamp();
@@ -748,7 +748,7 @@
         }
       }
       this.input.freshKeys = [];
-      if (this.production) {
+      if (!this.production) {
         this.stats.end();
       }
       requestAnimationFrame(() => this.loop());
