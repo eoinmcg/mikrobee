@@ -648,6 +648,7 @@
       this.score = 0;
       this.hiScore = 200;
       this.plays = 0;
+      this.pause = false;
       this.production = window.BUILD || false;
       this.ents = [];
       this.imgs = [];
@@ -739,6 +740,15 @@
       if (this.input.freshKeys.KeyF) {
         this.H.toggleFullScreen(this.canvas.c);
       }
+      if (this.input.freshKeys.KeyP) {
+        this.pause = !this.pause;
+      }
+      if (this.input.freshKeys.KeyS) {
+        var canvas = document.getElementById("game");
+        var dataURL = canvas.toDataURL("image/png");
+        var newTab = window.open("about:blank", "screenShot");
+        newTab.document.write("<img src='" + dataURL + "' alt='from canvas'/>");
+      }
       if (this.input.freshKeys.KeyM) {
         this.mute = !this.mute;
         if (this.mute && this.mainMusic) {
@@ -754,6 +764,8 @@
       requestAnimationFrame(() => this.loop());
     }
     update(step) {
+      if (this.pause)
+        return;
       this.fader = Math.sin((/* @__PURE__ */ new Date()).getTime() * 5e-3);
       this.runEvents(step);
       this.state.update(step);
@@ -1025,10 +1037,10 @@
       this.fade = 1;
       this.fader = 0;
       this.canStart = false;
+      this.lightening = 0;
       this.bee = new Sprite(this.g, { i: "bee", x: 0, y: 20, scale: 1 });
     }
     update(dt) {
-      let g = this.g;
       for (let e of this.g.ents)
         e.update(dt);
       if (this.bee.x < 64) {
@@ -1043,6 +1055,9 @@
       if (this.initFade && this.fade > 0.01) {
         this.fade -= 0.01;
       }
+      if (this.lightening > 0) {
+        this.lightening -= 0.02;
+      }
     }
     render() {
       const g = this.g;
@@ -1054,6 +1069,15 @@
       this.g.draw.rect(x, 16, 64, 8, 2);
       this.g.draw.ctx.globalAlpha = 1;
       this.g.draw.img(g.imgs.title, 0, 0);
+      if (Math.random() > 0.995 && this.lightening <= 0.01) {
+        console.log("SPARK");
+        this.lightening = 1;
+      }
+      if (this.lightening >= 0.01) {
+        this.g.draw.ctx.globalAlpha = this.lightening;
+        this.g.draw.rect(0, 0, 64, 64, 1);
+        this.g.draw.ctx.globalAlpha = 1;
+      }
       this.g.draw.ctx.globalAlpha = 0.3;
       this.g.draw.img(this.g.imgs["stars"], 0, -32);
       this.g.draw.img(this.g.imgs["bg_hills"], 0, 0);
@@ -1066,7 +1090,7 @@
     }
     showControls() {
       this.g.spawn("Control", {
-        x: 54,
+        x: 53,
         y: 1,
         textCol: 1,
         clickCol: 12,
