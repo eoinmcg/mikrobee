@@ -70,13 +70,14 @@ export default class Tutorial {
 
     for (let n of this.g.ents) n.render();
 
+      g.draw.text(`STEP ${this.step}`, this.secondText, false, 2);
     if (this.step === 1) {
       g.draw.text(`${g.mobile ? 'TAP' : 'CLICK'} TO SHOOT`, this.mainText, false, 10);
       g.draw.text(`AND FLY`, this.mainText, false, 20);
       g.draw.img(g.imgs['bee'], 28, 30, 2)
     } else if (this.step === 2) {
       g.draw.text(`SHOOT THE`, this.mainText, false, 10);
-      g.draw.text(`BADDIES`, this.mainText, false, 20);
+      g.draw.text(`NASTIES`, this.mainText, false, 20);
       this.baddies.fly.render();
       this.baddies.eye.render();
       g.draw.rect(31, 31, 1, 1, 3);
@@ -106,4 +107,3 @@ export default class Tutorial {
   }
 
 }
-

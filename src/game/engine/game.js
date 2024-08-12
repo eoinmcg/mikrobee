@@ -118,10 +118,10 @@ export default class Game {
     document.getElementsByTagName('head')[0].appendChild(l);
   }
 
-  changeState(state) {
+  changeState(state, o = {}) {
     this.ents = [];
     this.events = [];
-    this.state = new this.states[state](this);
+    this.state = new this.states[state](this, o);
     this.music.stop();
     this.state.init();
   }

@@ -717,10 +717,10 @@
       l.href = c.toDataURL("image/x-icon");
       document.getElementsByTagName("head")[0].appendChild(l);
     }
-    changeState(state) {
+    changeState(state, o2 = {}) {
       this.ents = [];
       this.events = [];
-      this.state = new this.states[state](this);
+      this.state = new this.states[state](this, o2);
       this.music.stop();
       this.state.init();
     }
@@ -1330,8 +1330,9 @@
 
   // src/game/states/play.js
   var Play = class {
-    constructor(g) {
+    constructor(g, o2) {
       this.g = g;
+      this.o = o2;
       window.T = this;
     }
     init() {
@@ -1341,7 +1342,7 @@
       this.scoreText = g.H.mkFont(g, 1, 2);
       this.scoreTextShadow = g.H.mkFont(g, 1, 0);
       this.score = 0;
-      this.levelNum = 0;
+      this.levelNum = this.o.levelNum || 0;
       this.levelData = levels_default.levels[this.levelNum];
       this.loadLevel(this.levelData);
       this.gameOver = false;
@@ -1497,7 +1498,7 @@
                 this.g.mainMusic.pause();
                 this.g.mainMusic.currentTime = 0;
               }
-              this.g.changeState("Play");
+              this.g.changeState("Play", { levelNum: this.levelNum });
             }
           });
         }
@@ -1616,13 +1617,14 @@
       g.draw.clear(12);
       for (let n of this.g.ents)
         n.render();
+      g.draw.text(`STEP ${this.step}`, this.secondText, false, 2);
       if (this.step === 1) {
         g.draw.text(`${g.mobile ? "TAP" : "CLICK"} TO SHOOT`, this.mainText, false, 10);
         g.draw.text(`AND FLY`, this.mainText, false, 20);
         g.draw.img(g.imgs["bee"], 28, 30, 2);
       } else if (this.step === 2) {
         g.draw.text(`SHOOT THE`, this.mainText, false, 10);
-        g.draw.text(`BADDIES`, this.mainText, false, 20);
+        g.draw.text(`NASTIES`, this.mainText, false, 20);
         this.baddies.fly.render();
         this.baddies.eye.render();
         g.draw.rect(31, 31, 1, 1, 3);

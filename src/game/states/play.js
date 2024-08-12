@@ -3,8 +3,10 @@ import Wiper from '../entities/wiper';
 
 export default class Play {
 
-  constructor(g) {
+  constructor(g, o) {
     this.g = g;
+    this.o = o;
+
     window.T = this;
   }
 
@@ -17,7 +19,7 @@ export default class Play {
     this.scoreTextShadow = g.H.mkFont(g, 1, 0);
     this.score = 0;
 
-    this.levelNum = 0;
+    this.levelNum = this.o.levelNum || 0;
     this.levelData = Levels.levels[this.levelNum];
     this.loadLevel(this.levelData);
 
@@ -202,7 +204,7 @@ export default class Play {
               this.g.mainMusic.pause();
               this.g.mainMusic.currentTime = 0;
             }
-            this.g.changeState('Play');
+            this.g.changeState('Play', {levelNum: this.levelNum});
           }
         });
       }
