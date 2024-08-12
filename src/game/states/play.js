@@ -129,8 +129,6 @@ export default class Play {
       let ent = s.k,
           delay = s.delay;
       s.p = this;
-      // delete s.k;
-      // delete s.delay;
         this.g.addEvent({
           t: delay,
           cb:() => {
@@ -147,6 +145,7 @@ export default class Play {
     }
 
     if (level.muzak !== 'undefined') {
+      console.log('MUSIC', level.muzak, AUDIO);
       this.g.mainMusic = AUDIO[level.muzak];
       this.g.mainMusic.currentTime = 0;
       this.g.mainMusic.loop = true;

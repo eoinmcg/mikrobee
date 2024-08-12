@@ -825,46 +825,6 @@
   };
   var sfx_default = Sfx;
 
-  // src/game/data/music.js
-  var instruments = {
-    VOX: {
-      wave: "square",
-      pan: -0.1,
-      gain: 0.1
-    },
-    BSS: {
-      wave: "triangle",
-      pan: 0.5,
-      gain: 0.7
-    }
-  };
-  var tracks = {
-    win: {
-      bpm: 180,
-      isLooping: false,
-      parts: [
-        "VOXA41A#41A41A#41G44C54",
-        "BSSA41A#41A41A#41G44C54"
-      ]
-    },
-    dead: {
-      bpm: 120,
-      isLooping: false,
-      parts: [
-        "VOXF31E31D31B31A#24",
-        "BSSF31E31D31B31A#24"
-      ]
-    },
-    help: {
-      bpm: 180,
-      isLooping: false,
-      parts: [
-        "VOXC22C22G12G12A#12A#12B12B12G12E12G14",
-        "BSSC22C22G12G12A#12A#12B12B12G12E12G14"
-      ]
-    }
-  };
-
   // src/game/data/base.js
   var base_default = {
     title: "MIKROBEE",
@@ -908,10 +868,8 @@
     ],
     i: images_default,
     scale: ["circle", "dot"],
-    audio: ["music.ogg", "intro.ogg"],
-    sfx: sfx_default,
-    instruments,
-    tracks
+    audio: ["music.ogg"],
+    sfx: sfx_default
   };
 
   // src/game/entities/sprite.js
@@ -1141,10 +1099,6 @@
       this.g.addEvent({
         t: 100,
         cb: () => {
-          this.g.mainMusic = AUDIO[1];
-          this.g.mainMusic.currentTime = 0;
-          this.g.mainMusic.loop = false;
-          this.g.mainMusic.play();
           this.canStart = true;
         }
       });
@@ -1223,7 +1177,7 @@
     levels: [
       {
         title: "The Meadows",
-        muzak: "undefined",
+        muzak: 0,
         dist: 1e3,
         floor: 0,
         roof: 0,
@@ -1247,7 +1201,7 @@
       },
       {
         title: "The Forest",
-        muzak: "undefined",
+        muzak: 0,
         dist: 2500,
         ents: ["Eye", "Creep"],
         freq: 60,
@@ -1267,7 +1221,7 @@
       },
       {
         title: "The Cave",
-        muzak: "undefined",
+        muzak: 0,
         dist: 3e3,
         ents: ["Fly", "Spike"],
         freq: 40,
@@ -1442,6 +1396,7 @@
         this.p1.y = 32;
       }
       if (level.muzak !== "undefined") {
+        console.log("MUSIC", level.muzak, AUDIO);
         this.g.mainMusic = AUDIO[level.muzak];
         this.g.mainMusic.currentTime = 0;
         this.g.mainMusic.loop = true;

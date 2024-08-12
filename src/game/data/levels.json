@@ -2,7 +2,7 @@
   "levels": [
     {
       "title": "The Meadows",
-      "muzak": "undefined",
+      "muzak": 0,
       "dist": 1000,
       "floor": 0,
       "roof": 0,
@@ -26,7 +26,7 @@
     },
     {
       "title": "The Forest",
-      "muzak": "undefined",
+      "muzak": 0,
       "dist": 2500,
       "ents": ["Eye", "Creep"],
       "freq": 60,
@@ -47,7 +47,7 @@
     },
     {
       "title": "The Cave",
-      "muzak": "undefined",
+      "muzak": 0,
       "dist": 3000,
       "ents": ["Fly", "Spike"],
       "freq": 40,

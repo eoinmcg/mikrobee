@@ -15,15 +15,12 @@ export default class Title {
 
     this.fader = 0;
     this.canStart = false;
+    this.lightening = 0;
 
     this.bee = new Sprite(this.g, { i: 'bee', x: 0, y: 20, scale: 1});
-
-
   }
 
   update(dt) {
-    let g = this.g;
-
     for (let e of this.g.ents) e.update(dt);
 
     if (this.bee.x < 64) {
@@ -40,6 +37,9 @@ export default class Title {
       this.fade -= 0.01;
     }
 
+    if (this.lightening > 0) {
+      this.lightening -= 0.02;
+    }
 
   }
 
@@ -56,11 +56,21 @@ export default class Title {
 
     this.g.draw.img(g.imgs.title, 0, 0);
 
+    if (Math.random() > 0.995 && this.lightening <= 0.01) {
+      console.log('SPARK');
+      this.lightening = 1;
+    }
+
+
+    if (this.lightening >= 0.01) {
+    this.g.draw.ctx.globalAlpha = this.lightening;
+      this.g.draw.rect(0, 0, 64, 64, 1);
+    this.g.draw.ctx.globalAlpha = 1;
+    }
+
     this.g.draw.ctx.globalAlpha = 0.3;
     this.g.draw.img(this.g.imgs['stars'], 0, -32);
     this.g.draw.img(this.g.imgs['bg_hills'], 0, 0);
-    // this.g.draw.ctx.globalAlpha = 1;
-    // this.g.draw.ctx.globalAlpha = 0.2;
     this.g.draw.img(this.g.imgs['bg_1'], 0, 44);
     this.g.draw.ctx.globalAlpha = 1;
 
@@ -72,7 +82,7 @@ export default class Title {
 
   showControls() {
     this.g.spawn('Control', {
-      x: 54,
+      x: 53,
       y: 1,
       textCol: 1,
       clickCol: 12,
@@ -106,10 +116,6 @@ export default class Title {
     this.g.addEvent({
       t: 100,
       cb: () => {
-        this.g.mainMusic = AUDIO[1];
-        this.g.mainMusic.currentTime = 0;
-        this.g.mainMusic.loop = false;
-        this.g.mainMusic.play();
         this.canStart = true;
       },
     });

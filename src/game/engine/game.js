@@ -35,6 +35,7 @@ export default class Game {
     this.score = 0;
     this.hiScore = 200;
     this.plays = 0;
+    this.pause = false;
     this.production = window.BUILD || false;
 
     this.ents = [];
@@ -128,6 +129,7 @@ export default class Game {
 
   loop() {
 
+
     if (!this.production) { this.stats.begin(); }
     this.frameCurr = H.timeStamp();
     this.dt = this.dt + Math.min(1, (this.frameCurr - this.framePrev) / 1000);
@@ -141,6 +143,15 @@ export default class Game {
     this.framePrev = this.frameCurr;
     if (this.input.freshKeys.KeyF) {
       this.H.toggleFullScreen(this.canvas.c);
+    }
+    if (this.input.freshKeys.KeyP) {
+      this.pause = !this.pause;
+    }
+    if (this.input.freshKeys.KeyS) {
+        var canvas = document.getElementById('game');
+        var dataURL = canvas.toDataURL('image/png');
+        var newTab = window.open('about:blank','screenShot');
+        newTab.document.write("<img src='" + dataURL + "' alt='from canvas'/>");
     }
     if (this.input.freshKeys.KeyM) {
       this.mute = !this.mute;
@@ -156,6 +167,7 @@ export default class Game {
   }
 
   update(step) {
+    if (this.pause) return;
     this.fader = Math.sin(new Date().getTime() * 0.005);
     this.runEvents(step);
     this.state.update(step);

@@ -1,6 +1,5 @@
 import Images from './images';
 import Sfx from './sfx';
-import { instruments, tracks } from './music';
 
 export default {
   title: 'MIKROBEE',
@@ -27,8 +26,6 @@ export default {
   ],
   i: Images,
   scale: ['circle', 'dot'],
-  audio: ['music.ogg', 'intro.ogg'],
-  sfx: Sfx,
-  instruments,
-  tracks,
+  audio: ['music.ogg'],
+  sfx: Sfx
 };
