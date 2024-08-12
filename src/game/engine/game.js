@@ -72,7 +72,7 @@ export default class Game {
       const bee = this.draw.resize(this.imgs.bee, 16)
       this.favIcon(bee);
 
-      if (this.production) {
+      if (!this.production) {
         this.stats = new Stats();
         this.stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
       }
@@ -128,7 +128,7 @@ export default class Game {
 
   loop() {
 
-    if (this.production) { this.stats.begin(); }
+    if (!this.production) { this.stats.begin(); }
     this.frameCurr = H.timeStamp();
     this.dt = this.dt + Math.min(1, (this.frameCurr - this.framePrev) / 1000);
 
@@ -151,7 +151,7 @@ export default class Game {
       }
     }
     this.input.freshKeys = [];
-    if (this.production) { this.stats.end(); }
+    if (!this.production) { this.stats.end(); }
     requestAnimationFrame(() => this.loop());
   }
 
