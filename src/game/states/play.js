@@ -19,7 +19,7 @@ export default class Play {
     this.scoreTextShadow = g.H.mkFont(g, 1, 0);
     this.score = 0;
 
-    this.levelNum = this.o.levelNum || 2;
+    this.levelNum = this.o.levelNum || 0;
     this.levelData = Levels.levels[this.levelNum];
     this.loadLevel(this.levelData);
 
@@ -145,7 +145,6 @@ export default class Play {
     }
 
     if (level.muzak !== 'undefined') {
-      console.log('MUSIC', level.muzak, AUDIO);
       this.g.mainMusic = AUDIO[level.muzak];
       this.g.mainMusic.currentTime = 0;
       this.g.mainMusic.loop = true;

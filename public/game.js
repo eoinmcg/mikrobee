@@ -6,8 +6,7 @@
       this.loaded = [];
       this.loadedImgs = 0;
       this.totalImgs = Object.keys(images).length;
-      this.base = window.BUILD ? "a/" : "http://local/arcade/LOWREZ2024/a/";
-      this.base = "/";
+      this.base = "";
       this.audio = audio;
       this.totalAudio = audio.length;
       window.AUDIO = [];
@@ -669,6 +668,7 @@
       } };
       this.music = { play() {
       }, stop() {
+      }, pause() {
       } };
       loader.start().then((res) => {
         this.imgs = res;
@@ -693,10 +693,8 @@
       });
     }
     initAudio() {
-      if (!this.ios) {
-        this.audio = audio_default;
-        this.audio.init(this, this.data.sfx);
-      }
+      this.audio = audio_default;
+      this.audio.init(this, this.data.sfx);
     }
     scaleUp(key) {
       let i = 3;
@@ -1070,7 +1068,6 @@
       this.g.draw.ctx.globalAlpha = 1;
       this.g.draw.img(g.imgs.title, 0, 0);
       if (Math.random() > 0.995 && this.lightening <= 0.01) {
-        console.log("SPARK");
         this.lightening = 1;
       }
       if (this.lightening >= 0.01) {
@@ -1320,7 +1317,7 @@
       this.scoreText = g.H.mkFont(g, 1, 2);
       this.scoreTextShadow = g.H.mkFont(g, 1, 0);
       this.score = 0;
-      this.levelNum = this.o.levelNum || 2;
+      this.levelNum = this.o.levelNum || 0;
       this.levelData = levels_default.levels[this.levelNum];
       this.loadLevel(this.levelData);
       this.gameOver = false;
@@ -1420,7 +1417,6 @@
         this.p1.y = 32;
       }
       if (level.muzak !== "undefined") {
-        console.log("MUSIC", level.muzak, AUDIO);
         this.g.mainMusic = AUDIO[level.muzak];
         this.g.mainMusic.currentTime = 0;
         this.g.mainMusic.loop = true;

@@ -57,7 +57,6 @@ export default class Title {
     this.g.draw.img(g.imgs.title, 0, 0);
 
     if (Math.random() > 0.995 && this.lightening <= 0.01) {
-      console.log('SPARK');
       this.lightening = 1;
     }
 

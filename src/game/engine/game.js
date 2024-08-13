@@ -56,7 +56,7 @@ export default class Game {
     this.input = new Input(this.canvas.c, this);
     this.shake = new Shake(this.canvas.c, this.H.rnd, this.ios);
     this.audio = { play() {} };
-    this.music = { play() {}, stop() {} };
+    this.music = { play() {}, stop() {}, pause() {} };
 
 
     loader.start().then((res) => {
@@ -89,10 +89,10 @@ export default class Game {
   }
 
   initAudio() {
-    if (!this.ios) {
+    // if (!this.ios) {
       this.audio = Audio;
       this.audio.init(this, this.data.sfx);
-    }
+    // }
   }
 
   scaleUp(key) {

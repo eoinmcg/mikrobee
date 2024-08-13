@@ -5,9 +5,7 @@ export default class Loader {
     this.loaded = [];
     this.loadedImgs = 0;
     this.totalImgs = Object.keys(images).length;
-    this.base = (window.BUILD)
-      ? 'a/' : 'http://local/arcade/LOWREZ2024/a/';
-    this.base = '/';
+    this.base = '';
     this.audio = audio;
     this.totalAudio = audio.length;
     window.AUDIO = [];
